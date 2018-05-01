@@ -69,7 +69,7 @@ class Command : public ICommand
 class CompositeCommand : public vector<Command>, public ICommand
 {
   public:
-    CompositeCommand(const initializer_list<value_type> _list) : vector<Command>(_list)
+    CompositeCommand(const initializer_list<value_type>& _list) : vector<Command>(_list)
     {
     }
 
